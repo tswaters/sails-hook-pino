@@ -1,0 +1,37 @@
+{
+  "name": "sails-hook-pino",
+  "version": "1.0.0",
+  "description": "Sails hook for pino logging",
+  "main": "index.js",
+  "readme": "README.MD",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">4"
+  },
+  "author": {
+    "name": "Tyler Waters",
+    "email": "tyler.waters@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tswaters/sails-hook-pino.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^4.17.4",
+    "pino": "^4.7.1",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "sails": "*"
+  },
+  "sails": {
+    "isHook": true
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1"
+  }
+}

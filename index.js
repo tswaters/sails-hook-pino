@@ -84,6 +84,12 @@ module.exports = function SailsHookPino (sails) {
 
     instance: () => logger,
 
+    /**
+     * Creates something that looks like a sails logger (e.g., with silly)
+     * This passes along context to create a child pino logger
+     */
+    createChild: (context) => createLogger(logger.createChild(context)),
+
     getPinoLevel,
 
     getSailsLevel,

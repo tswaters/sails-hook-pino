@@ -26,7 +26,9 @@ With this setup, during initialization, `sails.log` will be a simple logger that
 
 All these methods can be accessed from `sails.hooks.pino`
 
-* `instance` - function(string) => PinoLogger: call to receive the base logger instance
+* `instance` - function() => PinoLogger: call to receive the base logger instance
+
+* `createChild` - function(context) => SailsLogger: call to create a pino child that looks like the sails logger
 
 * `getPinoLevel` - function(string) => string: pass a logging level from sails to get the level in pino
 
